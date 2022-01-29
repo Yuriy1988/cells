@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+}
+
+.alive {
+  background: black;
+}
