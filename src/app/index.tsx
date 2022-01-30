@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import { Board } from 'app/modules/board/board-container';
+import { LivingCellsGrid } from 'app/modules/living-cells-grid/living-cells-grid-container';
 
 
 export const App = () => {
   return (
-    <Board />
+    <LivingCellsGrid />
   );
 }

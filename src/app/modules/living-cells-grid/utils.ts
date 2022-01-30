@@ -42,9 +42,9 @@ export const updateCell = (
 
   const isUnderPopulation = isAlive && liveNeighboursAmount < 2;
   const isOvercrowding = isAlive && liveNeighboursAmount > 3;
+  const isReproduction = !isAlive && liveNeighboursAmount === 3;
 
   const shouldDie = isUnderPopulation || isOvercrowding;
-  const isReproduction = !isAlive && liveNeighboursAmount === 3;
   const shouldStayAlive = isAlive && (liveNeighboursAmount === 2 || liveNeighboursAmount === 3);
 
   if (shouldDie) {
@@ -55,5 +55,3 @@ export const updateCell = (
     return isAlive ? 1 : 0;
   }
 };
-
-export const getTest = () => 1;

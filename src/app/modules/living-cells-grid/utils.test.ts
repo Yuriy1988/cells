@@ -1,5 +1,5 @@
-import {getNeighbours, getLiveNeighboursAmount, createGrid, updateCell} from 'app/modules/board/utils';
-import { Grid, Cell } from 'app/modules/board/types';
+import { getNeighbours, getLiveNeighboursAmount, createGrid, updateCell } from 'app/modules/living-cells-grid/utils';
+import { Grid, Cell } from 'app/modules/living-cells-grid/types';
 
 const grid: Grid = [
   [0,0,0,0,0],

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { INTERVAL } from './constants';
-import { updateCell} from 'app/modules/board/utils';
-import { Grid, Row, Cell } from 'app/modules/board/types';
+import { updateCell} from 'app/modules/living-cells-grid/utils';
+import { Grid, Row, Cell } from 'app/modules/living-cells-grid/types';
 
 export const useLiveCellsGrid = (initialGrid: Grid) => {
-  const [grid, setGrid] = useState<Array<Array<0 | 1>>>(initialGrid);
+  const [grid, setGrid] = useState<Grid>(initialGrid);
 
   useEffect(() => {
     const intervalId = setInterval(() => {

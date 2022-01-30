@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Row } from './components/row-component';
-import { useLiveCellsGrid } from 'app/modules/board/hooks';
-import { createGrid } from 'app/modules/board/utils';
-import { GRID_SIZE } from 'app/modules/board/constants';
+import { useLiveCellsGrid } from 'app/modules/living-cells-grid/hooks';
+import { createGrid } from 'app/modules/living-cells-grid/utils';
+import { GRID_SIZE } from 'app/modules/living-cells-grid/constants';
 
-export const Board = () => {
+export const LivingCellsGrid = () => {
   const initialGrid = React.useMemo(() => createGrid(GRID_SIZE), []);
   const grid = useLiveCellsGrid(initialGrid);
 
